@@ -16,7 +16,7 @@ def predict(request):
     return render(request,'predict.html')
 
 def result(request):
-    df = pd.read_csv("static/DiabetesPrediction/images/diabetes.csv")
+    df = pd.read_csv(""/home/ubuntu/Diabetes_rec_django/data/diabetes.csv"")
 
     X=data.drop("Outcome", axis=1)
     Y=data["Outcome"]
