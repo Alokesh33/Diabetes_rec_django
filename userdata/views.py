@@ -35,8 +35,8 @@ def result(request):
     val8=float(request.GET['n8'])
     arr1=[val1,val2,val3,val4,val5,val6,val7,val8]
     from .ml_model import my_model
-    arr2=np.array(arr1).reshape(1,-1)
-    pred=model.predict(arr2)
+    #arr2=np.array(arr1).reshape(1,-1)
+    pred=model.predict(arr1)
 
     result2=""
     if pred==[1]:
